@@ -8,13 +8,13 @@
     <owners>Ramon Ordiales</owners>
     <developmentDependency>true</developmentDependency>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
-    <projectUrl>http://github.com/Fody/FactoryIdAddin</projectUrl>
+    <projectUrl>https://github.com/ramoneeza/FactoryId.Fody</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/Fody/BasicFodyAddin/master/Icons/package_icon.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ramoneeza/FactoryId.Fody/master/Icons/package_icon.png</iconUrl>
     <description>Inject Static Id for Factory Pattern.</description>
     <summary />
     <language>en</language>
-    <tags>ILWeaving, Fody, Cecil</tags>
+    <tags>ILWeaving, Fody, Cecil, Factory Pattern</tags>
     <dependencies>
       <dependency id="Fody"/>
     </dependencies>
