@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8">
     <id>FactoryId.Fody</id>
-    <version>$version$</version>
-    <title>FactoryIdAddin.Fody</title>
+    <version>0.3.4</version>
+    <title>FactoryId.Fody</title>
     <authors>Ramon Ordiales</authors>
     <owners>Ramon Ordiales</owners>
     <developmentDependency>true</developmentDependency>
@@ -16,7 +16,12 @@
     <language>en</language>
     <tags>ILWeaving, Fody, Cecil, Factory Pattern</tags>
     <dependencies>
-      <dependency id="Fody"/>
+      <dependency id="Fody" version="1.29" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="bin\Release\*.dll" target="lib" /> 
+    <file src="..\Content\FactoryId.cs" target="Content" />
+	<file src="..\Tools\*.*" target="Tools" /> 
+</files>
 </package>

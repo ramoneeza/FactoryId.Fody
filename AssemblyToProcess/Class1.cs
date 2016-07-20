@@ -12,9 +12,10 @@ namespace AssemblyToProcess
 		public static int FactoryIntKey => -1;
 		public static string FactoryStrKey => null;
 
+#pragma warning disable RECS0154 // Parameter is never used
 		public static ClassA FactoryInt(int key) { return null; }
 		public static ClassA FactoryStr(string key) { return null; }
-
+#pragma warning restore RECS0154 // Parameter is never used
 
 	}
 
@@ -41,8 +42,10 @@ namespace AssemblyToProcess
 	[FactoryStrBaseAuto]
 	public class Auto
 	{
+#pragma warning disable RECS0154 // Parameter is never used
 		public static Auto FactoryInt(int key) { return null; }
 		public static Auto FactoryStr(string key) { return null; }
+#pragma warning restore RECS0154 // Parameter is never used
 	}
 	public class AutoHola:Auto { };
 	public class AutoQuetal : Auto { };
@@ -51,14 +54,4 @@ namespace AssemblyToProcess
 	[FactoryExclude]
 	public class AutoNanay : Auto { };
 
-
-	public class FAKE
-	{
-		private static Dictionary<int, Type> _Factory = new Dictionary<int, Type>();
-		public static Auto Factory(int key)
-		{
-			if (_Factory.ContainsKey(key)) return (Auto)Activator.CreateInstance(_Factory[key]);
-			return null;
-		}
-	}
 }

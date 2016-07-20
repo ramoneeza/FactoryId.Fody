@@ -1,0 +1,1 @@
+nuget push ../NugetBuild/FactoryId.Fody.0.3.4.nupkg -Source https://www.nuget.org/api/v2/package

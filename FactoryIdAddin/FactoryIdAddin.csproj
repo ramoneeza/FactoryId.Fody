@@ -67,6 +67,8 @@
     <Compile Include="ModuleWeaver.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="nugetpack.cmd" />
+    <None Include="nugetpush.cmd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

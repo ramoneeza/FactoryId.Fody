@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-[assembly: AssemblyTitle("SampleFodyAddin")]
-[assembly: AssemblyProduct("SampleFodyAddin")]
-[assembly: AssemblyVersion("0.3.3")]
-[assembly: AssemblyFileVersion("0.3.3")]
+[assembly: AssemblyTitle("FactoryIdAddin")]
+[assembly: AssemblyProduct("FactoryIdAddin")]
+[assembly: AssemblyVersion("0.3.4")]
+[assembly: AssemblyFileVersion("0.3.4")]

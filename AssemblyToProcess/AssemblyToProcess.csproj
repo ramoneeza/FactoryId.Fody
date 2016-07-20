@@ -39,8 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Content\FactoryId.cs">
+      <Link>FactoryId.cs</Link>
+    </Compile>
     <Compile Include="Class1.cs" />
-    <Compile Include="FactoryId.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
