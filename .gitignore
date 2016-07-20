@@ -10,7 +10,7 @@
 *.user
 *.sln.docstates
 *.pidb
-
+.vs/
 *.ncrunchsolution
 
 # Build results
@@ -74,4 +74,5 @@ Thumbs.db
 
 # Folder config file
 Desktop.ini
+
 
