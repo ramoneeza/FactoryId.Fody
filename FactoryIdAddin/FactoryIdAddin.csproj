@@ -8,8 +8,8 @@
     <ProjectGuid>{C3578A7B-09A6-4444-9383-0DEAFA4958BD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FactoryIdAddin.Fody</RootNamespace>
-    <AssemblyName>FactoryIdAddin.Fody</AssemblyName>
+    <RootNamespace>FactoryIdFody</RootNamespace>
+    <AssemblyName>FactoryId.Fody</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
