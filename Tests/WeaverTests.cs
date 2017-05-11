@@ -14,7 +14,8 @@ public class WeaverTests
     [TestFixtureSetUp]
     public void Setup()
     {
-        var projectPath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\..\AssemblyToProcess\AssemblyToProcess.csproj"));
+		var codebase =Uri.UnescapeDataString((new UriBuilder(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase))).Path);
+        var projectPath = Path.GetFullPath(Path.Combine(codebase, @"..\..\..\AssemblyToProcess\AssemblyToProcess.csproj"));
         assemblyPath = Path.Combine(Path.GetDirectoryName(projectPath), @"bin\Debug\AssemblyToProcess.dll");
 #if (!DEBUG)
         assemblyPath = assemblyPath.Replace("Debug", "Release");
@@ -23,7 +24,7 @@ public class WeaverTests
         newAssemblyPath = assemblyPath.Replace(".dll", "2.dll");
         File.Copy(assemblyPath, newAssemblyPath, true);
 
-        var moduleDefinition = ModuleDefinition.ReadModule(newAssemblyPath);
+        var moduleDefinition = ModuleDefinition.ReadModule(assemblyPath);
         var weavingTask = new ModuleWeaver
         {
             ModuleDefinition = moduleDefinition
