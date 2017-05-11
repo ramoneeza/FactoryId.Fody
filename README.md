@@ -7,7 +7,7 @@ Simplifies the implementation of [Factory Method Pattern](https://en.wikipedia.o
 [Introduction to Fody](http://github.com/Fody/Fody/wiki/SampleUsage)
 
 
-## The nuget package  [![NuGet Status](http://img.shields.io/nuget/v/Ramoneeza.Fody.svg?style=flat)](https://www.nuget.org/packages/FactoryId.Fody/)
+## The nuget package  [![NuGet Status](http://img.shields.io/nuget/v/FactoryId.Fody.svg?style=flat)](https://www.nuget.org/packages/FactoryId.Fody/)
 
 https://nuget.org/packages/FactoryId.Fody/
 
